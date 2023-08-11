@@ -82,3 +82,7 @@ class CountdownApp:
                 self.last_time = int(file.read())
         except FileNotFoundError:
             self.last_time = None
+
+    def save_last_time(self):
+        with open("last_time.txt", "w") as file:
+            file.write(str(self.remaining_seconds))
