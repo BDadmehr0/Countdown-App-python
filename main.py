@@ -5,3 +5,5 @@ import customtkinter as ctk
 # or 
 from CTkMessagebox import CTkMessagebox
 import random
+
+class CountdownApp:
