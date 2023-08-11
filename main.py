@@ -66,3 +66,6 @@ class CountdownApp:
             self.e()
             self.last_time = None  # Reset the last saved time
             self.save_last_time()  # Save the last time after countdown finishes
+
+    def e(self):
+        exit()
