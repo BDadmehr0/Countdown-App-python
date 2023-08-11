@@ -20,3 +20,6 @@ class CountdownApp:
 
         self.label = ctk.CTkLabel(self.root, text_color='red')
         self.label.pack(padx=20, pady=10, anchor='center')
+
+        self.load_last_time()  # Load the last saved time
+        self.start_countdown()
