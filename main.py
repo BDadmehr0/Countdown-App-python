@@ -28,3 +28,6 @@ class CountdownApp:
 
         # Create a Font instance with Roboto 15
         self.custom_font = ctk.CTkFont(family="Roboto", size=37)
+
+        # Apply the custom font to the label
+        self.label.configure(font=self.custom_font)
