@@ -31,3 +31,9 @@ class CountdownApp:
 
         # Apply the custom font to the label
         self.label.configure(font=self.custom_font)
+
+    def toggle_geom(self,event):
+        geom=self.master.winfo_geometry()
+        print(geom,self._geom)
+        self.master.geometry(self._geom)
+        self._geom=geom
