@@ -86,3 +86,13 @@ class CountdownApp:
     def save_last_time(self):
         with open("last_time.txt", "w") as file:
             file.write(str(self.remaining_seconds))
+
+    def on_closing(self):
+        self.save_last_time()
+        self.root.destroy()
+
+if __name__ == '__main__':
+    root = ctk.CTk()
+    ctk.set_appearance_mode("system")
+    app = CountdownApp(root)
+    root.mainloop()
