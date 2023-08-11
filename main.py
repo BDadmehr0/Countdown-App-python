@@ -37,3 +37,14 @@ class CountdownApp:
         print(geom,self._geom)
         self.master.geometry(self._geom)
         self._geom=geom
+
+    def start_countdown(self):
+        try:
+            years = random.randint(60, 70)
+            total_seconds = years * 365 * 24 * 60 * 60
+            if self.last_time is not None:  # Use the last saved time if available
+                total_seconds = self.last_time
+            self.remaining_seconds = total_seconds
+            self.update_countdown()
+        except ValueError:
+            self.show_error("Invalid Input", "Please enter a valid number of years.")
