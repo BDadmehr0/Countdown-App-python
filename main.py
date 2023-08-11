@@ -23,3 +23,5 @@ class CountdownApp:
 
         self.load_last_time()  # Load the last saved time
         self.start_countdown()
+
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing)  # Set the closing event handler
