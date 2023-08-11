@@ -25,3 +25,6 @@ class CountdownApp:
         self.start_countdown()
 
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)  # Set the closing event handler
+
+        # Create a Font instance with Roboto 15
+        self.custom_font = ctk.CTkFont(family="Roboto", size=37)
