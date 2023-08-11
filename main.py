@@ -69,3 +69,9 @@ class CountdownApp:
 
     def e(self):
         exit()
+
+    def show_error(self, title, message):
+        CTkMessagebox(title=title, message=message)
+
+    def show_info(self, title, message):
+        CTkMessagebox(title=title, message=message)
