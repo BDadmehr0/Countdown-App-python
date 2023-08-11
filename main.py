@@ -75,3 +75,10 @@ class CountdownApp:
 
     def show_info(self, title, message):
         CTkMessagebox(title=title, message=message)
+
+    def load_last_time(self):
+        try:
+            with open("last_time.txt", "r") as file:
+                self.last_time = int(file.read())
+        except FileNotFoundError:
+            self.last_time = None
