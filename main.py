@@ -7,3 +7,4 @@ from CTkMessagebox import CTkMessagebox
 import random
 
 class CountdownApp:
+    def __init__(self, root):
