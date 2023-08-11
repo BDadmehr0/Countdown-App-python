@@ -17,3 +17,6 @@ class CountdownApp:
         root.geometry("{0}x{1}+0+0".format(
             root.winfo_screenwidth()-pad, root.winfo_screenheight()-pad))
         root.bind('<Escape>', self.toggle_geom)
+
+        self.label = ctk.CTkLabel(self.root, text_color='red')
+        self.label.pack(padx=20, pady=10, anchor='center')
